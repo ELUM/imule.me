@@ -1,0 +1,12 @@
+.squares {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(7, 15px);
+}
+
+.child {
+    background-color: green;
+    text-align: center;
+    margin: 1px;
+    border-radius: 2px;
+}

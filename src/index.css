@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.Avatar {
+  text-align: center;
+}
+
+.Avatar h1 {
+  margin: 0;
+}
+
+.Avatar p {
+  margin: 0 0 5px 0;
+}
+
+.Avatar img {
+  border: 1px solid rgba(45, 45, 45, 0.3);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
