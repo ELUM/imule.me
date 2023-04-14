@@ -13,6 +13,7 @@ body {
 
 .Avatar {
   text-align: center;
+  height: 200px;
 }
 
 .Avatar h1 {
@@ -24,11 +25,36 @@ body {
 }
 
 .Avatar img {
-  border: 1px solid rgba(45, 45, 45, 0.3);
-  width: 200px;
-  height: 200px;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
+  transition: all 0.5s ease;
+  /* animation-fill-mode: forwards; */
+  /* animation: avatarPointer 0.5s ease-out; */
+}
+
+.Avatar img:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0
+  }
+
+  49% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+.avatar-cursor {
+  animation: blink 1.2s infinite;
 }
