@@ -1,3 +1,4 @@
+import '../css/components/avatar.css';
 
 const Avatar = () => {
     return (

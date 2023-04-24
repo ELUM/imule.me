@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Square from "./Square";
 
-import '../css/test.css';
-
 interface Data {
   id: number,
   value: number

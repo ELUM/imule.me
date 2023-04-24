@@ -1,9 +1,9 @@
-import '../css/square.css';
+import '../css/components/square.css';
 
 const Square = (props: any) => {
 
   const { data, cloumnNum } = props;
-  console.log(cloumnNum);
+  // console.log(cloumnNum);
 
   return (
     <div className="squares" style={{ gridTemplateColumns: `repeat(${cloumnNum}, 15px)` }}>
@@ -11,7 +11,6 @@ const Square = (props: any) => {
         data.map((n: any, index: number) => {
           return (
             <div className={`child ${index}`} key={index} style={{ opacity: `${n.value * 10}%` }}>
-              {/* {n.value} */}
             </div>
           )
         })

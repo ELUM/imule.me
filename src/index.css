@@ -3,58 +3,18 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  transition: all 500ms ease;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-
-.Avatar {
-  text-align: center;
-  height: 200px;
-}
-
-.Avatar h1 {
-  margin: 0;
-}
-
-.Avatar p {
-  margin: 0 0 5px 0;
-}
-
-.Avatar img {
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-drag: none;
-  transition: all 0.5s ease;
-  /* animation-fill-mode: forwards; */
-  /* animation: avatarPointer 0.5s ease-out; */
-}
-
-.Avatar img:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.3);
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0
-  }
-
-  49% {
-    opacity: 0
-  }
-
-  50% {
-    opacity: 1
-  }
-}
-
-.avatar-cursor {
-  animation: blink 1.2s infinite;
 }
